@@ -72,6 +72,10 @@ section {
 .btn {
   background: var(--main-color);
   color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .logo {
