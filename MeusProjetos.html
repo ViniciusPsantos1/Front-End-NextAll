@@ -1,0 +1,48 @@
+<!-- meus-projetos.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meus Projetos</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 20px; }
+    h1 { color: #333; }
+    .filtros { margin-bottom: 20px; }
+    .projetos { display: grid; gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 5px #ccc; }
+    .status { font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Meus Projetos</h1>
+
+  <div class="filtros">
+    <label for="status">Filtrar por status:</label>
+    <select id="status" onchange="filtrarProjetos()">
+      <option value="todos">Todos</option>
+      <option value="ativo">Ativo</option>
+      <option value="concluido">Concluído</option>
+      <option value="cancelado">Cancelado</option>
+    </select>
+  </div>
+
+  <div class="projetos" id="lista-projetos">
+    <div class="card" data-status="ativo">
+      <h3>Site para restaurante</h3>
+      <p>Desenvolvimento de um site simples com cardápio online.</p>
+      <p class="status">Status: Ativo</p>
+    </div>
+    <div class="card" data-status="concluido">
+      <h3>Logo para marca de roupas</h3>
+      <p>Criação de identidade visual para marca jovem.</p>
+      <p class="status">Status: Concluído</p>
+    </div>
+    <div class="card" data-status="cancelado">
+      <h3>Landing page de vendas</h3>
+      <p>Landing page responsiva com formulário de captura.</p>
+      <p class="status">Status: Cancelado</p>
+    </div>
+  </div>
+  <script src="/js/Categoria 2.js"></script>
+</body>
+</html>

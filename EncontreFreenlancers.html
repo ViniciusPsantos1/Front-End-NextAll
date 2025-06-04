@@ -1,0 +1,45 @@
+<!-- encontre-freelancers.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Encontre Freelancers</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+    h1 { color: #444; }
+    .search-box { margin-bottom: 20px; }
+    .freelancers { display: grid; gap: 20px; }
+    .freelancer-card {
+      background: white; padding: 20px; border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .freelancer-card h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>Encontre Freelancers</h1>
+
+  <div class="search-box">
+    <input type="text" id="busca" placeholder="Buscar por habilidade ou nome..." onkeyup="buscarFreelancers()" style="width: 100%; padding: 10px;">
+  </div>
+
+  <div class="freelancers" id="lista-freelancers">
+    <div class="freelancer-card">
+      <h3>Ana Silva</h3>
+      <p>Designer Gráfico | ★★★★★</p>
+      <p>Especializada em logos e identidade visual.</p>
+    </div>
+    <div class="freelancer-card">
+      <h3>João Souza</h3>
+      <p>Desenvolvedor Front-End | ★★★★☆</p>
+      <p>HTML, CSS, JavaScript, React.</p>
+    </div>
+    <div class="freelancer-card">
+      <h3>Marina Costa</h3>
+      <p>Redatora Freelancer | ★★★★☆</p>
+      <p>Textos para blogs, SEO e redes sociais.</p>
+    </div>
+  </div>
+   <script src="/js/Categoria 3.js"></script>
+</body>
+</html>

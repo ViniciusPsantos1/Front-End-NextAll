@@ -15,6 +15,18 @@ body {
     background-position: center;
 }
 
+.navbar {
+    width: 5%;
+    height: 100%;
+    margin-right: 20%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    max-width: auto;
+}
 
 /*PRINCIPAL LOGIN */
 

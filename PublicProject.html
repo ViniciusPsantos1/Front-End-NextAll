@@ -1,0 +1,51 @@
+<!-- publique-projeto.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Publique um Projeto</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #eef2f5; padding: 30px; }
+    h1 { color: #333; }
+    form { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px #ccc; }
+    input, textarea, select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; }
+    button { padding: 12px 20px; background: #2b7cff; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #1a5fd4; }
+  </style>
+</head>
+<body>
+
+  <h1>Publique um Projeto</h1>
+
+  <form id="formProjeto">
+    <label>Nome do Projeto</label>
+    <input type="text" required>
+
+    <label>Descrição</label>
+    <textarea rows="5" required></textarea>
+
+    <label>Categoria</label>
+    <select required>
+      <option value="">Selecione</option>
+      <option>Design</option>
+      <option>Desenvolvimento</option>
+      <option>Marketing</option>
+      <option>Redação</option>
+    </select>
+
+    <label>Faixa de Preço</label>
+    <select required>
+      <option value="">Escolha</option>
+      <option>Até R$500</option>
+      <option>R$500 - R$1000</option>
+      <option>R$1000+</option>
+    </select>
+
+    <label>Anexar Arquivo</label>
+    <input type="file">
+
+    <button type="submit">Publicar Projeto</button>
+  </form>
+ <script src="/js/Categoria 4.js"></script>
+</body>
+</html>
