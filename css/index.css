@@ -1,0 +1,339 @@
+:root {
+  --main-color: #DFD0B8;
+  --black: #000; /* Valor definido */
+  --bg: #DFD0B8;
+  --border: 0.1rem solid;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 1px solid #fff; /* Corrigido */
+  background-color: #222831;
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.icons i { /* Corrigido para usar <i> */
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  color: var(--main-color); /* Muda a cor ao passar o mouse */
+}
+
+.btn {
+  background: var(--main-color);
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #c5b299; /* Cor mais escura ao passar o mouse */
+}
+
+.logo {
+  display: flex;
+  height: 35px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  display: none; /* Oculta por padrão */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.search-bar.active {
+  display: block; /* Exibe quando a classe 'active' é adicionada */
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px rgba(223, 208, 184, 0.5);
+}
+
+/* Menu do usuário */
+.user-menu {
+  display: none; /* Oculta por padrão */
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.user-menu.active {
+  display: block; /* Exibe quando a classe 'active' é adicionada */
+}
+
+.user-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu ul li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.user-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.user-menu ul li a:hover {
+  color: #007BFF; /* Cor azul ao passar o mouse */
+}
+
+/* Área inicial */
+.welcome-section {
+  margin-top: 80px; /* Espaço para evitar sobreposição com o cabeçalho */
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-section .btn {
+  background-color: white;
+  color: #007BFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.welcome-section .btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Conteúdo principal */
+.home-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.home-container .content {
+  text-align: center;
+}
+
+.home-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.home-container .btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-container .btn:hover {
+  background-color: #c5b299;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    top: 50px;
+    right: 10px;
+  }
+}
+
+/* Estilo para o rodapé */
+.footer {
+  background-color: #222831; /* Fundo escuro */
+  color: white; /* Texto branco */
+  padding: 20px 0; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 50px; /* Espaçamento superior */
+}
+
+.footer h3 {
+  font-size: 1.8rem; /* Tamanho do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.footer .btn {
+  background-color: var(--main-color); /* Cor principal */
+  color: white; /* Texto branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1.2rem; /* Tamanho do texto */
+  font-weight: bold; /* Negrito */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.footer .btn:hover {
+  background-color: #c5b299; /* Cor mais clara ao passar o mouse */
+  color: #222831; /* Texto escuro */
+}
+
+/* Seção de Categorias */
+.categories {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category i {
+  font-size: 3rem;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}

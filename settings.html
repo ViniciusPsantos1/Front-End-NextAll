@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - NextAll</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .settings-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .settings-section {
+            margin-bottom: 30px;
+        }
+
+        .settings-section h3 {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .settings-section label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .settings-section input,
+        .settings-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .settings-section button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .settings-section button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="/index.html" class="logo">
+                <img src="/image/logo-nextall.png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="/index.html">Inicio</a>
+                <a href="/MeusProjetos.html">Meus Projetos</a>
+                <a href="/EncontreFreenlancers.html">Encontre Freelancers</a>
+                <a href="/PublicProject.html">Publique um Projeto</a>
+            </nav>
+        </section>
+    </header>
+
+    <div class="settings-container">
+        <h2>Configurações</h2>
+
+        <!-- Configurações de Perfil -->
+        <div class="settings-section">
+            <h3>Perfil</h3>
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" placeholder="Digite seu nome de usuário">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+
+            <button>Salvar Alterações</button>
+        </div>
+
+        <!-- Configurações de Segurança -->
+        <div class="settings-section">
+            <h3>Segurança</h3>
+            <label for="password">Nova Senha</label>
+            <input type="password" id="password" placeholder="Digite sua nova senha">
+
+            <label for="confirm-password">Confirmar Nova Senha</label>
+            <input type="password" id="confirm-password" placeholder="Confirme sua nova senha">
+
+            <button>Atualizar Senha</button>
+        </div>
+
+        <!-- Preferências -->
+        <div class="settings-section">
+            <h3>Preferências</h3>
+            <label for="language">Idioma</label>
+            <select id="language">
+                <option value="pt-br">Português</option>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+            </select>
+
+            <button>Salvar Preferências</button>
+        </div>
+    </div>
+</body>
+
+</html>

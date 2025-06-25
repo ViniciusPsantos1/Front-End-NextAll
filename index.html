@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextAll</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header class="header">
         <section>
             <a href="/index.html" class="logo">
@@ -27,25 +29,68 @@
             </nav>
 
             <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="search--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/person-male.png" alt="person-male"/>
+                <i class="fas fa-search" onclick="toggleSearchBar()"></i>
+                <i class="fas fa-user" onclick="toggleUserMenu()"></i>
+            </div>
 
+            <div class="search-bar" id="searchBar">
+                <input type="text" placeholder="Digite para buscar...">
+            </div>
+
+            <div class="user-menu" id="userMenu">
+                <ul>
+                    <li><a href="/profile.html">Meu Perfil</a></li>
+                    <li><a href="/settings.html">Configurações</a></li>
+                    <li><a href="/logout.html">Sair</a></li>
+                </ul>
             </div>
         </section>
     </header>
 
-    <div class="home-container">
+    <!-- Área inicial -->
+    <div class="welcome-section">
+        <h1>Bem-vindo ao NextAll</h1>
+        <p>Conectando você aos melhores freelancers e projetos.</p>
+        <a href="/PublicProject.html" class="btn">Publique seu Projeto</a>
+    </div>
+
+    <!-- Seção de Categorias -->
+<section class="categories">
+    <h2>Nossas Categorias</h2>
+    <div class="category-container">
+        <div class="category">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Desenvolvimento Web</h3>
+            <p>Encontre os melhores desenvolvedores para criar seu site ou aplicativo.</p>
+        </div>
+        <div class="category">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Design Gráfico</h3>
+            <p>Contrate designers para criar logotipos, banners e muito mais.</p>
+        </div>
+        <div class="category">
+            <i class="fas fa-chart-line"></i>
+            <h3>Marketing Digital</h3>
+            <p>Impulsione seu negócio com estratégias de marketing digital.</p>
+        </div>
+        <div class="category">
+            <i class="fas fa-pen-fancy"></i>
+            <h3>Redação</h3>
+            <p>Encontre redatores para criar conteúdos incríveis para seu projeto.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
         <section>
             <div class="content">
                 <h3>Serviços profissionais em diversas categorias</h3>
-                <a href="/PublicProject.html" class="btn">Publique seu projeto agora</a>
-            </div>            
+            </div>
         </section>
+    </footer>
 
-    </div>
-    
-<script src="/js/main.js"></script>
-    
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
