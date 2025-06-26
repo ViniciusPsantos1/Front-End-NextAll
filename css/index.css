@@ -25,14 +25,18 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 15px 20px;
+  padding: 15px 0;
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .logo img {
-  height: 50px;
+.logo img {
+  height: 50px; /* Altura da logo */
+  width: auto; /* Mantém a proporção da imagem */
 }
 
 .navbar {
@@ -56,62 +60,44 @@ body {
   border-bottom-color: #948979;
 }
 
-.icons {
+.auth-buttons {
   display: flex;
   gap: 15px;
-  font-size: 1.2rem;
-  color: #fff; /* Ícones brancos */
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
   cursor: pointer;
-  margin-left: auto; /* Move os ícones para o lado direito */
+  transition: all 0.3s ease;
 }
 
-.search-bar {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.auth-buttons .search {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-.search-bar input {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-  outline: none;
+.auth-buttons .search:hover {
+  background-color: #948979;
+  color: #fff;
 }
 
-.user-menu {
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.user-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.user-menu ul li {
-  margin-bottom: 10px;
-}
-
-.user-menu ul li a {
-  color: #333;
+.auth-buttons .profile {
+  background-color: #948979;
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
 }
 
-.user-menu ul li a:hover {
-  color: #948979;
+.auth-buttons .profile:hover {
+  background-color: #7f746a;
+}
+.auth-buttons .profile a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Herda a cor do botão */
+  display: inline-block; /* Garante que o link se comporte como um botão */
 }
 
 /* Hero Section */

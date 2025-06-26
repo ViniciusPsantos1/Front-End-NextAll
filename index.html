@@ -12,11 +12,13 @@
 <body>
     <!-- Cabeçalho -->
     <header class="header">
-        <section>
+        <section class="container">
+            <!-- Logo -->
             <a href="/index.html" class="logo">
-                <img src="/image/logo-nextall.png" alt="Logo NextAll">
+                <img src="/image/logo-nextall.png" alt="Logo NextAll" class="logo-image">
             </a>
     
+            <!-- Navegação -->
             <nav class="navbar">
                 <a href="/index.html">Inicio</a>
                 <a href="/MeusProjetos.html">Meus Projetos</a>
@@ -24,31 +26,13 @@
                 <a href="/PublicProject.html">Publique um Projeto</a>
             </nav>
     
-            <div class="icons">
-                <i class="fas fa-search" onclick="toggleSearchBar()"></i>
-                <i class="fas fa-user" onclick="toggleUserMenu()"></i>
-            </div>
-    
-            <div class="search-bar" id="searchBar">
-                <input type="text" placeholder="Digite para buscar...">
-            </div>
-    
-            <div class="user-menu" id="userMenu">
-                <ul>
-                    <li><a href="/profile.html">Meu Perfil</a></li>
-                    <li><a href="/settings.html">Configurações</a></li>
-                    <li><a href="/logout.html">Sair</a></li>
-                </ul>
+            <!-- Botões de ação -->
+            <div class="auth-buttons">
+                <button class="search">Buscar</button>
+                <button class="profile"><a href="/profile.html">Meu Perfil</a></button>
             </div>
         </section>
     </header>
-
-    <!-- Área inicial -->
-    <div class="welcome-section">
-        <h1>Bem-vindo ao NextAll</h1>
-        <p>Conectando você aos melhores freelancers e projetos.</p>
-        <a href="/PublicProject.html" class="btn">Publique seu Projeto</a>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -67,15 +51,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-circle">
-                        <img src="https://via.placeholder.com/400x400/6a1b9a/ffffff?text=Freelancer" alt="Freelancer trabalhando">
-                    </div>
-                    <div class="floating-icons">
-                        <div class="icon icon-1">💻</div>
-                        <div class="icon icon-2">🎨</div>
-                        <div class="icon icon-3">📊</div>
-                        <div class="icon icon-4">📝</div>
-                        <div class="icon icon-5">⚙️</div>
-                        <div class="icon icon-6">📱</div>
+                        <img src="/image/FreelancerTrabalhando.png" alt="Freelancer trabalhando">
                     </div>
                 </div>
             </div>
