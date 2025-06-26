@@ -1,51 +1,76 @@
-<!-- publique-projeto.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publique um Projeto</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #eef2f5; padding: 30px; }
-    h1 { color: #333; }
-    form { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px #ccc; }
-    input, textarea, select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; }
-    button { padding: 12px 20px; background: #2b7cff; color: white; border: none; border-radius: 6px; cursor: pointer; }
-    button:hover { background: #1a5fd4; }
-  </style>
+  <link rel="stylesheet" href="/css/publique.css">
 </head>
 <body>
+  <header class="header">
+    <section>
+        <a href="/index.html" class="logo">
+            <img src="/image/logo-nextall.png" alt="Logo NextAll">
+        </a>
 
-  <h1>Publique um Projeto</h1>
+        <nav class="navbar">
+            <a href="/index.html">Início</a>
+            <a href="/MeusProjetos.html">Meus Projetos</a>
+            <a href="/EncontreFreelancers.html">Encontre Freelancers</a>
+            <a href="/PublicProject.html">Publique um Projeto</a>
+            <a href="/profile.html">Meu Perfil</a>
+        </nav>
 
-  <form id="formProjeto">
-    <label>Nome do Projeto</label>
-    <input type="text" required>
+        <div class="icons">
+            <i class="fas fa-search" onclick="toggleSearchBar()"></i>
+            <i class="fas fa-user" onclick="toggleUserMenu()"></i>
+        </div>
 
-    <label>Descrição</label>
-    <textarea rows="5" required></textarea>
+        <div class="search-bar" id="searchBar">
+            <input type="text" placeholder="Digite para buscar...">
+        </div>
 
-    <label>Categoria</label>
-    <select required>
-      <option value="">Selecione</option>
-      <option>Design</option>
-      <option>Desenvolvimento</option>
-      <option>Marketing</option>
-      <option>Redação</option>
-    </select>
+        <div class="user-menu" id="userMenu">
+            <ul>
+                <li><a href="/profile.html">Meu Perfil</a></li>
+                <li><a href="/settings.html">Configurações</a></li>
+                <li><a href="/logout.html">Sair</a></li>
+            </ul>
+        </div>
+    </section>
+</header>
 
-    <label>Faixa de Preço</label>
-    <select required>
-      <option value="">Escolha</option>
-      <option>Até R$500</option>
-      <option>R$500 - R$1000</option>
-      <option>R$1000+</option>
-    </select>
+<h1>Publique um Projeto</h1>
 
-    <label>Anexar Arquivo</label>
-    <input type="file">
+<form id="formProjeto">
+  <label>Nome do Projeto</label>
+  <input type="text" required>
 
-    <button type="submit">Publicar Projeto</button>
-  </form>
- <script src="/js/Categoria 4.js"></script>
+  <label>Descrição</label>
+  <textarea rows="5" required></textarea>
+
+  <label>Categoria</label>
+  <select required>
+    <option value="">Selecione</option>
+    <option>Design</option>
+    <option>Desenvolvimento</option>
+    <option>Marketing</option>
+    <option>Redação</option>
+  </select>
+
+  <label>Faixa de Preço</label>
+  <select required>
+    <option value="">Escolha</option>
+    <option>Até R$500</option>
+    <option>R$500 - R$1000</option>
+    <option>R$1000+</option>
+  </select>
+
+  <label>Anexar Arquivo</label>
+  <input type="file">
+
+  <button type="submit">Publicar Projeto</button>
+</form>
+<script src="/js/Categoria4.js"></script>
 </body>
 </html>

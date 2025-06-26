@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - NextAll</title>
+    <title>Cadastro - NextAll</title>
     <!-- Fonte e ícones -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/Login.css">
@@ -16,32 +16,33 @@
     </header>
 
     <main class="container">
-        <form action="/index.html">
-            <h1>Login</h1>
+        <form action="/index.html" method="GET">
+            <h1>Cadastro</h1>
+            <div class="input-box">
+                <input id="name" name="name" placeholder="Nome Completo" type="text" required>
+                <i class="bx bxs-user"></i>
+            </div>
             <div class="input-box">
                 <input id="email" name="email" placeholder="Email" type="email" required>
-                <i class="bx bxs-user"></i>
+                <i class="bx bxs-envelope"></i>
             </div>
             <div class="input-box">
                 <input id="password" name="password" placeholder="Senha" type="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-        
-            <div class="remember-forgot">
-                <label for="remember">
-                    <input id="remember" type="checkbox">
-                    Lembrar senha
-                </label>
-                <a href="/forgot-password.html">Esqueci a senha</a>
+            <div class="input-box">
+                <input id="confirm-password" name="confirm-password" placeholder="Confirme a Senha" type="password" required>
+                <i class="bx bxs-lock-alt"></i>
             </div>
-        
-            <button type="submit" class="login">Entrar</button>
-        
+
+            <button type="submit" class="login">Cadastrar</button>
+
             <div class="register-link">
-                <p>Não tem uma conta? <a href="/register.html">Cadastre-se</a></p>
+                <p>Já tem uma conta? <a href="/Login.html">Entrar</a></p>
             </div>
         </form>
     </main>
+    <script></script>
 </body>
 
 </html>

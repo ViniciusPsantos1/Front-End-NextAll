@@ -1,0 +1,163 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa; /* Fundo claro */
+    padding: 30px;
+    color: #333; /* Texto principal */
+}
+
+/* Título principal */
+h1 {
+    color: #007BFF; /* Azul padrão */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007BFF; /* Azul padrão no foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efeito de foco */
+}
+
+/* Botão de envio */
+form button {
+    padding: 12px 20px;
+    background: #007BFF; /* Azul padrão */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #007BFF; /* Azul padrão */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f8f9fa; /* Cor mais clara no hover */
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-menu ul li {
+    margin-bottom: 10px;
+}
+
+.user-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.user-menu ul li a:hover {
+    color: #007BFF; /* Azul padrão no hover */
+}

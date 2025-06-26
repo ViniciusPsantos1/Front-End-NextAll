@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - NextAll</title>
+    <!-- Fonte e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS interno -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #222831;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #007BFF;
+        }
+
+        .profile-header h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .profile-header p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .profile-details {
+            margin-top: 20px;
+        }
+
+        .profile-details h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-details p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .edit-profile-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .edit-profile-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Perfil</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="/image/user-placeholder.png" alt="Foto de Perfil">
+            <div>
+                <h2>Nome do Usuário</h2>
+                <p>email@exemplo.com</p>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <h3>Informações do Perfil</h3>
+            <p><strong>Nome:</strong> Nome do Usuário</p>
+            <p><strong>Email:</strong> email@exemplo.com</p>
+            <p><strong>Data de Cadastro:</strong> 01/01/2023</p>
+        </div>
+
+        <a href="/settings.html" class="edit-profile-btn">Editar Perfil</a>
+    </div>
+</body>
+
+</html>
